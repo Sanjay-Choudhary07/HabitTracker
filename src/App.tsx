@@ -8,13 +8,15 @@ import HabitStats from './components/habitStats';
 function App() {
   return (
     <Provider store={store}>
-      <Container>
+      <Container maxWidth="md">
+       <Box sx={{ my: 4 }}>
        <Typography component="h1" variant='h2' align='center'>
         Habit Tracker
        </Typography>
        <AddHabitForm/>
        <HabitList/>
        <HabitStats />
+       </Box>
       </Container>
     </Provider>
     
