@@ -1,42 +1,12 @@
-// {
-//   "compilerOptions": {
- 
-
-
-//     "target": "ES2022",
-//     "lib": ["ES2023", "DOM"],
-//     "module": "ESNext",
-//     "skipLibCheck": true,
-    
-//     "jsx": "react-jsx", 
-   
-//     "moduleResolution": "bundler",
-//     "allowImportingTsExtensions": true,
-//     "isolatedModules": true,
-//     "moduleDetection": "force",
-//     "noEmit": true,
-
-   
-//     "strict": true,
-//     "noUnusedLocals": true,
-//     "noUnusedParameters": true,
-//     "noFallthroughCasesInSwitch": true
-//   },
-//   "include": ["vite.config.ts"]
-// }
-
 {
   "compilerOptions": {
     "target": "ES2022",
-    "lib": ["ES2023", "DOM"],  // Ensure DOM is added for React JSX
+    "lib": ["ES2023", ],  
     "module": "ESNext",
     "skipLibCheck": true,
 
-    /* JSX support */
-    "jsx": "react-jsx",  // This is crucial for handling JSX with React 17+
-
-    /* Module Resolution */
-    "moduleResolution": "node",
+    
+    "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "moduleDetection": "force",
@@ -48,12 +18,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
-    /* Paths */
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/*"]
-    }
   },
-  "include": ["src/**/*"],  // Include your source files
-  "exclude": ["node_modules"]
+   "include": ["vite.config.ts"]
 }

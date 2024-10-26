@@ -3,7 +3,6 @@ import { Box, TextField, Button, FormControl, InputLabel, Select, MenuItem} from
 import { useDispatch } from "react-redux";
 import { addHabit } from "../store/habit-slice";
 import { AppDispatch } from "../store/store";
-// import { Label } from '@mui/icons-material';
 const AddHabitForm:React.FC = () => {
     const [name, setName]=useState<string>("");
     const [frequency, setFrequency]=useState<"daily"|"weekly">("daily");
